@@ -1,0 +1,13 @@
+{
+  "url": "https://itsjute.github.io",
+  "title": "itsjute",
+  "name": "Julian",
+  "github": "itsjute",
+  "tagline": "I'm Julian. I make things in a home workshop – milled, lasered, printed and soldered.",
+  "intro": "CNC on a self-built PrintNC, laser-cut acrylic, 3D prints and ESP32 electronics, documented while they happen.",
+  "bio": "This site is my build log. I write down what I build, what works and what doesn't – mostly so I can find it again later, and in case it helps someone else.",
+  "tools": "PrintNC and LinuxCNC, Fusion 360, LightBurn, ESP32 with ESP-IDF, KiCad and Blender",
+  "heroImage": "medien/hero.jpg",
+  "heroCaption": "My workshop – the PrintNC on the bench",
+  "portrait": "medien/portrait.jpg"
+}

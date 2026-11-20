@@ -1,0 +1,8 @@
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+# --- itsjute-lab: private Teile nie hochladen ---
+/PROJEKT.md
+/medien/
+/einkauf/

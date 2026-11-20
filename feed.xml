@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<generator>itsjute-lab</generator>
+<title>itsjute – Journal</title>
+<link href="https://itsjute.github.io/"/>
+<link rel="self" href="https://itsjute.github.io/feed.xml"/>
+<id>https://itsjute.github.io/</id>
+<updated>2000-01-01T00:00:00Z</updated>
+<author><name>Julian</name></author>
+</feed>
