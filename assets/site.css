@@ -102,10 +102,10 @@ a:hover { color: #b91c1c; }
 .entry-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
 
 /* Hero: full-width workshop photo (design C3) */
-.hero-photo { position: relative; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(420px, 56vw, 680px); background: #2e2d2a; overflow: hidden; display: flex; align-items: flex-end; }
+.hero-photo { position: relative; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(420px, 56vw, 680px); height: clamp(340px, min(56vw, calc(100svh - 150px)), 680px); background: #2e2d2a; overflow: hidden; display: flex; align-items: flex-end; }
 .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero-photo .inner { position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 40px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 24px; }
-.hero-photo h1 { margin: 0; color: #ffffff; font-family: var(--display); font-weight: 700; font-size: clamp(72px, 12vw, 168px); line-height: .85; letter-spacing: -.05em; }
+.hero-photo h1 { margin: 0; color: #ffffff; font-family: var(--display); font-weight: 700; font-size: clamp(72px, 12vw, 168px); font-size: clamp(64px, min(12vw, 24svh), 168px); line-height: .85; letter-spacing: -.05em; }
 .hero-photo .caption { font-size: 14px; color: #e8e6e0; }
 .intro.two-col { margin-top: 0; padding: 48px 0 56px; }
 .intro .lead { font-size: 28px; line-height: 1.3; }
@@ -153,6 +153,15 @@ a:hover { color: #b91c1c; }
   @view-transition { navigation: none; }
 }
 
+/* Medium widths: project name moves above the title in journal rows */
+@media (max-width: 1000px) {
+  .entry-row { grid-template-columns: 110px minmax(0, 1fr) 24px; row-gap: 6px; column-gap: 24px; }
+  .entry-row .date { grid-column: 1; grid-row: 1 / span 2; }
+  .entry-proj { grid-column: 2; grid-row: 1; text-align: left; }
+  .entry-main { grid-column: 2; grid-row: 2; }
+  .entry-row .arrow { grid-column: 3; grid-row: 1 / span 2; }
+}
+
 /* Phones */
 @media (max-width: 720px) {
   .wrap { padding: 0 20px; }
@@ -164,6 +173,7 @@ a:hover { color: #b91c1c; }
   .lead { font-size: 22px; }
   .block { padding: 40px 0 56px; }
   .entry-row { grid-template-columns: 1fr; gap: 6px; padding: 22px 0; }
+  .entry-row .date, .entry-proj, .entry-main { grid-column: 1; grid-row: auto; }
   .entry-proj { text-align: left; order: -1; }
   .entry-row .arrow { display: none; }
   .entry-title { font-size: 24px; }
